@@ -6,9 +6,9 @@ public class UserRegistrationMain {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter last Name : ");
-        String getLastName = sc.next();
-        LastName last = new LastName();
-        last.lastName(getLastName);
+        System.out.println("Enter Email Address : ");
+        String getEmail = sc.next();
+        Email emailId = new Email();
+        emailId.email(getEmail);
     }
 }
