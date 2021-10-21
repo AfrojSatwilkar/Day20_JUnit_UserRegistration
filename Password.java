@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class Password {
     public void validate(String str) {
         int flag = 0;
-        Pattern pattern = Pattern.compile("^([A-Z]){1}([a-z0-9-_.]){7}$");
+        Pattern pattern = Pattern.compile("^(?=.*[A-Z])([a-zA-Z0-9-_.]){8,}$");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find()) {
             flag = 1;
